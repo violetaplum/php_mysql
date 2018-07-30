@@ -1,0 +1,23 @@
+create table cafe(
+     id bigint(20) unsigned not null auto_increment,
+     cafe_name varchar(255) not null,
+     cafe_address_lat varchar(30) not null,
+     cafe_address_lon varchar(30) not null,
+     info varchar(255) not null,
+     primary key (id)
+) charset=utf8;
+
+
+create table person(
+      id bigint(20) unsigned not null auto_increment,
+      name varchar(255) not null,
+      address varchar(255) not null,
+      primary key (id)
+)  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+
+
+
+insert cafe values(1,'A','37.602638','126.9530633','cafe 1');
+insert cafe values(2,'B','37.602800','126.956024','cafe 2');
+insert cafe values(3,'C','37.601244','126.954683','cafe 3');
